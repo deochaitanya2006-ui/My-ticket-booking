@@ -1,0 +1,62 @@
+`   <html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IRCTC Ticket Booking</title>
+    <subtitle>Designed by Chaitanya Deo </subtitle>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🚆 IRCTC Railway Ticket Booking</h1>
+    <p>Book Your Train Tickets Easily</p>
+</header>
+
+<div class="container">
+
+    <div class="glass">
+        <h2>Journey Details</h2>
+
+        <label>From</label>
+        <input type="text" id="from" placeholder="Source Station">
+
+        <label>To</label>
+        <input type="text" id="to" placeholder="Destination Station">
+
+        <label>Date of Journey</label>
+        <input type="date" id="date">
+
+        <label>Class</label>
+        <select id="class">
+            <option>Sleeper (SL)</option>
+            <option>3A</option>
+            <option>2A</option>
+            <option>1A</option>
+        </select>
+
+        <label>Passenger Name</label>
+        <input type="text" id="name" placeholder="Passenger Name">
+
+        <button onclick="searchTrain()">Search Trains</button>
+    </div>
+
+    <div class="train-box" id="trainBox">
+        <h3>🚄 Available Train</h3>
+        <p><b>Train:</b> Vande Bharat Express</p>
+        <p><b>Timing:</b> 06:00 AM – 02:00 PM</p>
+        <p><b>Status:</b> Seats Available</p>
+        <p><b>Fare:</b> ₹1200</p>
+        <button onclick="bookTicket()">Book Ticket</button>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Indian Railway Catering and Tourism Corporation (IRCTC) PVT.LTD
+</footer>
+
+<script src="project.js"></script>
+</body>
+</html>
